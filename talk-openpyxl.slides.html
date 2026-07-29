@@ -7435,7 +7435,7 @@ main {
 <main>
 <div class="reveal">
 <div class="slides"><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=32e9e0823e2298b7">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5dea0c74-d941-4f6f-b9f2-2b6109de5b82">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7446,7 +7446,7 @@ main {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fc9218677ac5f8f0">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7ab2640e-086c-4023-9360-25109cd40230">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7459,7 +7459,7 @@ main {
 </div>
 </div>
 </div><aside class="notes">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4ca16298733e20c2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9179f70f-7ade-455b-9c4a-5176c766bdd2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7477,7 +7477,25 @@ main {
 </div>
 </div>
 </aside></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9272beb3ffd3a9f5">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=85d7699c-5841-4f94-90b9-eacb2d67baf2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="0---Setup-Virtual-Environment,-Install-openpyxl">0 - Setup Virtual Environment, Install openpyxl<a class="anchor-link" href="#0---Setup-Virtual-Environment,-Install-openpyxl">¶</a></h2><p>I have a presentation on virtual environments at:</p>
+<p><a href="https://github.com/jocassid/Talk-VirtualEnvironments">https://github.com/jocassid/Talk-VirtualEnvironments</a></p>
+<div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">my_project</span>
+<span class="nb">cd </span><span class="n">my_project</span>
+<span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">-m</span> <span class="n">venv</span> <span class="n">venv</span>
+<span class="p">&amp;</span> <span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">activate</span><span class="p">.</span><span class="n">ps1</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">openpyxl</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cbdde0af-b261-48f7-abd5-5af6be057796">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7487,7 +7505,7 @@ main {
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=97a681d397404e5e">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8e27117b-8050-41b6-a026-46461a2b25ad">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7497,8 +7515,8 @@ main {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">openpyxl</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_workbook</span>
 
-<span class="n">wb</span> <span class="o">=</span> <span class="n">load_workbook</span><span class="p">(</span><span class="s1">'FoodInspectionsFirst100.xlsx'</span><span class="p">)</span>
-<span class="n">wb</span>
+<span class="n">wb_in</span> <span class="o">=</span> <span class="n">load_workbook</span><span class="p">(</span><span class="s1">'RuralAtlasData24.xlsx'</span><span class="p">)</span>
+<span class="n">wb_in</span>
 </pre></div>
 </div>
 </div>
@@ -7511,12 +7529,12 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;openpyxl.workbook.workbook.Workbook at 0x7fc31b6919d0&gt;</pre>
+<pre>&lt;openpyxl.workbook.workbook.Workbook at 0x230e9ec11c0&gt;</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cde862a5-3bc2-40e3-b3f9-0364cdabcd8b">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ad344a39-9d74-4a1d-b27e-b76085405ac4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7552,7 +7570,7 @@ main {
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1b2c1f0f-80a5-4cea-aa14-c417f33a0275">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2a7ab5da-37b1-47ab-80bb-31eef3d40751">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7584,17 +7602,28 @@ main {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f270096d-2364-4b6f-9bbc-7f60bebe6b7d">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=49bb90eb-6f58-42a1-9fef-1e51a8f212ac">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2---Create-a-workbook-view,-select,-add-and-remove-Worksheets">2 - Create a workbook view, select, add and remove Worksheets<a class="anchor-link" href="#2---Create-a-workbook-view,-select,-add-and-remove-Worksheets">¶</a></h2>
+<h2 id="2---Read-data-from-a-Workbook">2 - Read data from a Workbook<a class="anchor-link" href="#2---Read-data-from-a-Workbook">¶</a></h2>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=37b7b203-641a-4ef2-8b7b-d0b1f82d7b2a">
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d3cd02ff-09de-46de-982e-a304f0c00ed7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="List-Worksheets">List Worksheets<a class="anchor-link" href="#List-Worksheets">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dc166bde-580b-43d8-8ba6-13462c309eac">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7602,10 +7631,7 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">openpyxl</span><span class="w"> </span><span class="kn">import</span> <span class="n">Workbook</span>
-
-<span class="n">wb</span> <span class="o">=</span> <span class="n">Workbook</span><span class="p">()</span>
-<span class="n">wb</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">wb_in</span><span class="o">.</span><span class="n">sheetnames</span>
 </pre></div>
 </div>
 </div>
@@ -7618,12 +7644,30 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;openpyxl.workbook.workbook.Workbook at 0x7fc31b691e50&gt;</pre>
+<pre>['Read Me',
+ 'VariableNameLookup',
+ 'Documentation',
+ 'People',
+ 'Jobs',
+ 'County Classifications',
+ 'Income',
+ 'Veterans']</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1e9ddedc-78e2-45df-95ae-b8209eebb988">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b167984c-951c-497b-9624-c01977a9cf21">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Get-active-sheet">Get active sheet<a class="anchor-link" href="#Get-active-sheet">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8d4763b8-91b6-4dbc-8520-678331a7484f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7631,8 +7675,8 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># By default workbook has 1 worksheet</span>
-<span class="n">wb</span><span class="o">.</span><span class="n">sheetnames</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># note this also a writeable property</span>
+<span class="n">wb_in</span><span class="o">.</span><span class="n">active</span>
 </pre></div>
 </div>
 </div>
@@ -7645,12 +7689,23 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['Sheet']</pre>
+<pre>&lt;Worksheet "Read Me"&gt;</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=811d1080-583c-420e-bfa9-abca41d19ccf">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=66c7b1c7-bb2c-49e4-a7c8-3f0812e53bac">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Access-Worksheet,-by-title">Access Worksheet, by title<a class="anchor-link" href="#Access-Worksheet,-by-title">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9f951c1a-01ce-4fda-ba53-f8bb512157d5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7658,8 +7713,8 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get the active sheet (note this also a writeable property)</span>
-<span class="n">sheet</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">active</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># You can think of a Workbook as dict of Worksheets</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">wb_in</span><span class="p">[</span><span class="s1">'VariableNameLookup'</span><span class="p">]</span>
 <span class="n">sheet</span>
 </pre></div>
 </div>
@@ -7673,12 +7728,23 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;Worksheet "Sheet"&gt;</pre>
+<pre>&lt;Worksheet "VariableNameLookup"&gt;</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4dc904f5-4094-49ee-83dd-36cec70f0ad4">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1432b203-cfe9-487c-9d83-925c6da81476">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Worksheet-title">Worksheet title<a class="anchor-link" href="#Worksheet-title">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bff279c7-b847-4d7b-b38e-221dfabbc733">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7686,9 +7752,7 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># You can think of a Workbook as dict of Worksheets</span>
-<span class="n">sheet</span> <span class="o">=</span> <span class="n">wb</span><span class="p">[</span><span class="s1">'Sheet'</span><span class="p">]</span>
-<span class="n">sheet</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">sheet</span><span class="o">.</span><span class="n">title</span>  
 </pre></div>
 </div>
 </div>
@@ -7701,12 +7765,23 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;Worksheet "Sheet"&gt;</pre>
+<pre>'VariableNameLookup'</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7f1aab18-d2b4-426e-bb8b-68d120909367">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f68c82fb-1fa2-4a48-ac5c-580969eeafdc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Worksheet-boundaries-max-row-and-column">Worksheet boundaries max row and column<a class="anchor-link" href="#Worksheet-boundaries-max-row-and-column">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3ae363b3-017b-46f3-9f66-569c0f1862c8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7714,9 +7789,9 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Change the title of the sheet and check sheetnames</span>
-<span class="n">sheet</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">"README"</span>
-<span class="n">wb</span><span class="o">.</span><span class="n">sheetnames</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># boundaries of the sheet max_row and max_column</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sheet</span><span class="o">.</span><span class="n">max_row</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sheet</span><span class="o">.</span><span class="n">max_column</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7726,15 +7801,28 @@ main {
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['README']</pre>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>sheet.max_row=250
+sheet.max_column=5
+</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cfac4a27-1768-4916-b4f5-be3bb634496b">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f515a4af-05c7-4005-8b39-88bc0ffc3973">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="sheet.columns-and-sheet.rows-are-generators">sheet.columns and sheet.rows are generators<a class="anchor-link" href="#sheet.columns-and-sheet.rows-are-generators">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8aad2133-c5d2-48da-8c15-7e211cc1e252">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7742,9 +7830,8 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add a sheet to the workbook</span>
-<span class="n">failed_sheet</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">create_sheet</span><span class="p">(</span><span class="s1">'Failed'</span><span class="p">)</span>
-<span class="n">wb</span><span class="o">.</span><span class="n">sheetnames</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sheet</span><span class="o">.</span><span class="n">columns</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sheet</span><span class="o">.</span><span class="n">rows</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7754,15 +7841,28 @@ main {
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['README', 'Failed']</pre>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>sheet.columns=&lt;generator object Worksheet._cells_by_col at 0x00000230EA0DF2E0&gt;
+sheet.rows=&lt;generator object Worksheet._cells_by_row at 0x00000230EA0DE680&gt;
+</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7520462b-e240-44c0-bcb9-9f3ac07ef4c0">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c6abe257-b2b2-4f4a-97cc-f97c9de89aa0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="sheet.columns-(2D-array---cells-grouped-by-columns)">sheet.columns (2D array - cells grouped by columns)<a class="anchor-link" href="#sheet.columns-(2D-array---cells-grouped-by-columns)">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4b0fd6db-636a-4045-8638-437fd9e64a02">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7770,9 +7870,7 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># insert a sheet at specified index</span>
-<span class="n">passed_sheet</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">create_sheet</span><span class="p">(</span><span class="s1">'Passed'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">wb</span><span class="o">.</span><span class="n">sheetnames</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">sheet</span><span class="o">.</span><span class="n">columns</span><span class="p">][</span><span class="mi">0</span><span class="p">][:</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -7785,12 +7883,26 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['README', 'Passed', 'Failed']</pre>
+<pre>(&lt;Cell 'VariableNameLookup'.A1&gt;,
+ &lt;Cell 'VariableNameLookup'.A2&gt;,
+ &lt;Cell 'VariableNameLookup'.A3&gt;,
+ &lt;Cell 'VariableNameLookup'.A4&gt;)</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2eb3f1ca-ed28-4df3-a925-5bba75ea4494">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c05a1917-a82d-4df9-9d7e-d8da473198c8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="sheet.rows-(2d-array---cells-grouped-by-rows)">sheet.rows (2d array - cells grouped by rows)<a class="anchor-link" href="#sheet.rows-(2d-array---cells-grouped-by-rows)">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d5557b50-5f05-4479-bc5f-a62221157654">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7798,9 +7910,7 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Make Passed the active worksheet</span>
-<span class="n">wb</span><span class="o">.</span><span class="n">active</span> <span class="o">=</span> <span class="n">passed_sheet</span>
-<span class="n">wb</span><span class="o">.</span><span class="n">active</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">sheet</span><span class="o">.</span><span class="n">rows</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">:]</span>
 </pre></div>
 </div>
 </div>
@@ -7813,12 +7923,23 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;Worksheet "Passed"&gt;</pre>
+<pre>(&lt;Cell 'VariableNameLookup'.D2&gt;, &lt;Cell 'VariableNameLookup'.E2&gt;)</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=307e6b17-f401-4706-8168-18efe5a42dc1">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4fede441-f358-4bcc-a4dd-263cb325749c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="simple-iteration-by-rows">simple iteration by rows<a class="anchor-link" href="#simple-iteration-by-rows">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0c3ae81c-2348-471a-a369-3b0f4a1bb98c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7826,9 +7947,13 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># add another Worksheet so we can move it then delete it</span>
-<span class="n">delete_me</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">create_sheet</span><span class="p">(</span><span class="s1">'DELETEME'</span><span class="p">)</span>
-<span class="n">wb</span><span class="o">.</span><span class="n">sheetnames</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sheet</span><span class="o">.</span><span class="n">rows</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">cell</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">cell</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">break</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">break</span>
 </pre></div>
 </div>
 </div>
@@ -7838,15 +7963,32 @@ main {
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['README', 'Passed', 'Failed', 'DELETEME']</pre>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Cat_Sort
+Category
+1
+People
+1
+People
+</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e01127e1-1940-48f5-b97a-7d90bff24bb3">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=005c56f3-d8b2-4029-bd2d-24ea055123b1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Get-a-single-cell-Worksheet.cell(row,-col)">Get a single cell <code>Worksheet.cell(row, col)</code><a class="anchor-link" href="#Get-a-single-cell-Worksheet.cell(row,-col)">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=02384c0e-eea1-48a4-a12d-0b0776ffaaaa">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7854,8 +7996,8 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">wb</span><span class="o">.</span><span class="n">move_sheet</span><span class="p">(</span><span class="n">delete_me</span><span class="p">,</span> <span class="n">offset</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">wb</span><span class="o">.</span><span class="n">sheetnames</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Note row and column start at 1 not 0!!!</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7868,12 +8010,23 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['README', 'Passed', 'DELETEME', 'Failed']</pre>
+<pre>&lt;Cell 'VariableNameLookup'.B1&gt;</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=73c3fc12-9215-42ad-b4c1-ee367e672dca">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=49386d68-5b8f-4e2e-a4b7-dd25d9540573">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Get-a-single-cell-via-Worksheet%5B'B1'%5D">Get a single cell via <code>Worksheet['B1']</code><a class="anchor-link" href="#Get-a-single-cell-via-Worksheet%5B'B1'%5D">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e5a8544a-9ddc-4817-9ea2-93edb5c77e06">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7881,27 +8034,24 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Now remove the Worksheet</span>
-<span class="n">wb</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">delete_me</span><span class="p">)</span>
-<span class="n">wb</span><span class="o">.</span><span class="n">sheetnames</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">cell</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'B1'</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8ceb88b8-488e-437e-8fb9-2dd16f33b071">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['README', 'Passed', 'Failed']</pre>
-</div>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Cell-Properties">Cell Properties<a class="anchor-link" href="#Cell-Properties">¶</a></h3>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a29580be-c998-47bd-9bc0-c8d96ea6699e">
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2b330c98-e116-4b4c-ad70-9b1597cfa019">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7909,12 +8059,12 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># You'll get a ValueError if the sheet isn't present</span>
-<span class="k">try</span><span class="p">:</span>
-    <span class="n">wb</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">delete_me</span><span class="p">)</span>
-<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">delete_me</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2"> not present might as well delete the variable"</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">stderr</span><span class="p">)</span>
-    <span class="k">del</span> <span class="n">delete_me</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cell</span><span class="o">.</span><span class="n">col_idx</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cell</span><span class="o">.</span><span class="n">column</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cell</span><span class="o">.</span><span class="n">column_letter</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cell</span><span class="o">.</span><span class="n">row</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cell</span><span class="o">.</span><span class="n">value</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">cell</span><span class="o">.</span><span class="n">hyperlink</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7926,25 +8076,30 @@ main {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>DELETEME not present might as well delete the variable
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>cell.col_idx=2
+cell.column=2
+cell.column_letter='B'
+cell.row=1
+cell.value='Category'
+cell.hyperlink=None
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1db14084-7347-495a-98fc-511778a475b5">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8264e4b0-ff9b-4581-b5b7-b532a1951047">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3---Read-data-from-a-worksheet">3 - Read data from a worksheet<a class="anchor-link" href="#3---Read-data-from-a-worksheet">¶</a></h2>
+<h3 id="Select-rectangular-range-of-cells">Select rectangular range of cells<a class="anchor-link" href="#Select-rectangular-range-of-cells">¶</a></h3>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2d8acfb9-5f5a-4354-8e71-e692ddae54bd">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=30dfadc8-6e0c-46a1-af7a-e04b6fc507fc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7952,9 +8107,8 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load the spreadsheet again</span>
-<span class="n">inspections_wb</span> <span class="o">=</span> <span class="n">load_workbook</span><span class="p">(</span><span class="s1">'FoodInspectionsFirst100.xlsx'</span><span class="p">)</span>
-<span class="n">inspections_wb</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">selection</span> <span class="o">=</span> <span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">:</span><span class="s1">'E2'</span><span class="p">]</span>
+<span class="n">selection</span>
 </pre></div>
 </div>
 </div>
@@ -7967,12 +8121,32 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;openpyxl.workbook.workbook.Workbook at 0x7fc308552940&gt;</pre>
+<pre>((&lt;Cell 'VariableNameLookup'.A1&gt;,
+  &lt;Cell 'VariableNameLookup'.B1&gt;,
+  &lt;Cell 'VariableNameLookup'.C1&gt;,
+  &lt;Cell 'VariableNameLookup'.D1&gt;,
+  &lt;Cell 'VariableNameLookup'.E1&gt;),
+ (&lt;Cell 'VariableNameLookup'.A2&gt;,
+  &lt;Cell 'VariableNameLookup'.B2&gt;,
+  &lt;Cell 'VariableNameLookup'.C2&gt;,
+  &lt;Cell 'VariableNameLookup'.D2&gt;,
+  &lt;Cell 'VariableNameLookup'.E2&gt;))</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0f6b00f8-af20-426d-8fdc-8b669e1bfc82">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b470d352-d353-4c0f-a451-d00092803635">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="part-of-1-column-selected-still-cells-grouped-by-rows">part of 1 column selected still cells grouped by rows<a class="anchor-link" href="#part-of-1-column-selected-still-cells-grouped-by-rows">¶</a></h4>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ef2b1db8-baf6-4cb0-b945-4d4f557764a5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7980,7 +8154,7 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">inspections_wb</span><span class="o">.</span><span class="n">sheetnames</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">:</span><span class="s1">'A3'</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -7993,12 +8167,25 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>['FoodInspectionsFirst100']</pre>
+<pre>((&lt;Cell 'VariableNameLookup'.A1&gt;,),
+ (&lt;Cell 'VariableNameLookup'.A2&gt;,),
+ (&lt;Cell 'VariableNameLookup'.A3&gt;,))</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7f290fa2-11d3-40d1-8230-0d66fa2f11f0">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0cb69464-ff26-4ac9-ac64-f5cbd2d762cc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="part-of-1-row-selected,-still-get-tuple-of-tuples">part of 1 row selected, still get tuple of tuples<a class="anchor-link" href="#part-of-1-row-selected,-still-get-tuple-of-tuples">¶</a></h4>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=29742768-1b51-42bf-a2b2-536c79bced6d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8006,9 +8193,7 @@ main {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">sheet</span>
-<span class="n">in_sheet</span> <span class="o">=</span> <span class="n">inspections_wb</span><span class="o">.</span><span class="n">active</span>
-<span class="n">in_sheet</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">sheet</span><span class="p">[</span><span class="s1">'A1'</span><span class="p">:</span><span class="s1">'C1'</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -8021,238 +8206,30 @@ main {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;Worksheet "FoodInspectionsFirst100"&gt;</pre>
+<pre>((&lt;Cell 'VariableNameLookup'.A1&gt;,
+  &lt;Cell 'VariableNameLookup'.B1&gt;,
+  &lt;Cell 'VariableNameLookup'.C1&gt;),)</pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4a93d444-eb9a-45ea-8083-34e58e9d5d42">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># boundaries of the sheet max_row and max_column</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">in_sheet</span><span class="o">.</span><span class="n">max_row</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">in_sheet</span><span class="o">.</span><span class="n">max_column</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>in_sheet.max_row=101
-in_sheet.max_column=17
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6f9296d0-f97f-470f-b38b-35798cb3ee88">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Iterate over the row of headings</span>
-<span class="n">row</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">in_sheet</span><span class="o">.</span><span class="n">max_column</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-    <span class="n">cell</span> <span class="o">=</span> <span class="n">in_sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">row</span><span class="si">=}</span><span class="s2"> </span><span class="si">{</span><span class="n">col</span><span class="si">=}</span><span class="s2"> value=</span><span class="si">{</span><span class="n">cell</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>row=1 col=1 value=Inspection ID
-row=1 col=2 value=DBA Name
-row=1 col=3 value=AKA Name
-row=1 col=4 value=License #
-row=1 col=5 value=Facility Type
-row=1 col=6 value=Risk
-row=1 col=7 value=Address
-row=1 col=8 value=City
-row=1 col=9 value=State
-row=1 col=10 value=Zip
-row=1 col=11 value=Inspection Date
-row=1 col=12 value=Inspection Type
-row=1 col=13 value=Results
-row=1 col=14 value=Violations
-row=1 col=15 value=Latitude
-row=1 col=16 value=Longitude
-row=1 col=17 value=Location
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ad07d55d-592d-4232-9c73-cab395ad139e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># you can select a cell using a string</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">string</span><span class="w"> </span><span class="kn">import</span> <span class="n">ascii_uppercase</span>
-
-<span class="n">heading_map</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">ascii_uppercase</span><span class="p">[:</span><span class="mi">17</span><span class="p">]:</span>
-    <span class="n">cell</span> <span class="o">=</span> <span class="n">in_sheet</span><span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">1"</span><span class="p">]</span>
-    <span class="n">heading_map</span><span class="p">[</span><span class="n">cell</span><span class="o">.</span><span class="n">value</span><span class="p">]</span> <span class="o">=</span> <span class="n">col</span>
-<span class="n">heading_map</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>{'Inspection ID': 'A',
- 'DBA Name': 'B',
- 'AKA Name': 'C',
- 'License #': 'D',
- 'Facility Type': 'E',
- 'Risk': 'F',
- 'Address': 'G',
- 'City': 'H',
- 'State': 'I',
- 'Zip': 'J',
- 'Inspection Date': 'K',
- 'Inspection Type': 'L',
- 'Results': 'M',
- 'Violations': 'N',
- 'Latitude': 'O',
- 'Longitude': 'P',
- 'Location': 'Q'}</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0365f4ef-fc5a-48bc-8a06-e50a0a51fb52">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">unique_result_values</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">in_sheet</span><span class="o">.</span><span class="n">max_row</span><span class="p">):</span>
-    <span class="n">key</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"M</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span>
-    <span class="n">cell</span> <span class="o">=</span> <span class="n">in_sheet</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
-    <span class="n">unique_result_values</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">cell</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
-<span class="n">unique_result_values</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>{'Fail', 'Pass', 'Pass w/ Conditions'}</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=47817e0a-991e-4f3e-b27a-9b00dc881197">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">headings</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">heading_map</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<span class="n">max_heading_len</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">headings</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">max_heading_len</span><span class="si">=}</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="p">{</span><span class="n">h</span><span class="p">:</span> <span class="n">in_sheet</span><span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">heading_map</span><span class="p">[</span><span class="n">h</span><span class="p">]</span><span class="si">}</span><span class="s2">2"</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">heading_map</span><span class="o">.</span><span class="n">keys</span><span class="p">()}</span>
-<span class="n">record</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>max_heading_len=15
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>{'Inspection ID': 1068208,
- 'DBA Name': 'CHINA COURT RESTAURANT',
- 'AKA Name': 'CHINA COURT RESTAURANT',
- 'License #': 2141795,
- 'Facility Type': 'Restaurant',
- 'Risk': 'Risk 1 (High)',
- 'Address': '1146 N MILWAUKEE AVE',
- 'City': 'CHICAGO',
- 'State': 'IL',
- 'Zip': '60642',
- 'Inspection Date': datetime.datetime(2012, 3, 14, 0, 0),
- 'Inspection Type': 'License Re-Inspection',
- 'Results': 'Fail',
- 'Violations': '18. NO EVIDENCE OF RODENT OR INSECT OUTER OPENINGS PROTECTED/RODENT PROOFED, A WRITTEN LOG SHALL BE MAINTAINED AVAILABLE TO THE INSPECTORS - Comments: FOUND NO PEST CONTROL LOG BOOK ON PREMISES,FRONT/REAR DOORS TO PREMISES WITH 1/4" MODE OF ENTRY.MUST PROVIDE PEST CONTROL LOG BOOK,RODENT PROOF SAID DOORS ALL ACROSS THE BOTTOMS. | 32. FOOD AND NON-FOOD CONTACT SURFACES PROPERLY DESIGNED, CONSTRUCTED AND MAINTAINED - Comments: SPLASHGUARD AT FRONT EXPOSED HANDSINK IS MISSING MUST PROVIDE,SINK STOPPERS ARE NEEDED FOR THE 3 COMPARTMENT SINK.   | 41. PREMISES MAINTAINED FREE OF LITTER, UNNECESSARY ARTICLES, CLEANING  EQUIPMENT PROPERLY STORED - Comments: DETAIL CLEAN,ORGANIZE REAR STORAGE AREAS AND REMOVE ALL CLUTTER/UNUSED KITCHEN EQUIPMENTS DUE TO POTENTIAL PEST HARBORAGE.',
- 'Latitude': 41.9024622669496,
- 'Longitude': -87.6653060946726,
- 'Location': '(41.902462266949634, -87.66530609467256)'}</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9027d338-5b12-4c87-a45d-b909f7d60401">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e7299bb3-f831-4902-b436-dc7082e666a2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4---Converting-between-int-and-str-column-indexes">4 - Converting between int and str column indexes<a class="anchor-link" href="#4---Converting-between-int-and-str-column-indexes">¶</a></h2>
+<h3 id="Converting-between-numeric-and-string-column-indexes">Converting between numeric and string column indexes<a class="anchor-link" href="#Converting-between-numeric-and-string-column-indexes">¶</a></h3>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=de232a91-fc93-47ec-a9ae-32fd205aaf64">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=72bce3ab-73d1-48bd-89e4-1e7146e7e599">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">openpyxl.utils</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
@@ -8281,18 +8258,222 @@ get_column_letter(27)='AA'
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d8d3bf35-3383-4dd6-aa9b-dd3fd3cb0e6e">
+</div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4332de33-4d55-46b0-ba07-990bd53ee546">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5---Write-data-to-Spreadsheet-and-Save-Workbook">5 - Write data to Spreadsheet and Save Workbook<a class="anchor-link" href="#5---Write-data-to-Spreadsheet-and-Save-Workbook">¶</a></h2>
+<h2 id="3---Create-a-Workbook">3 - Create a Workbook<a class="anchor-link" href="#3---Create-a-Workbook">¶</a></h2>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2ddb9239-2fd6-4833-b5d4-e61c6d495e57">
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=788eee3c-ce5d-4531-bd9a-e66b0b49ae57">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Create-empty-notebook">Create empty notebook<a class="anchor-link" href="#Create-empty-notebook">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=65a92ec0-f00a-48aa-ad1c-58095eb7b297">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">openpyxl</span><span class="w"> </span><span class="kn">import</span> <span class="n">Workbook</span>
+
+<span class="n">wb_out</span> <span class="o">=</span> <span class="n">Workbook</span><span class="p">()</span>
+<span class="n">wb_out</span><span class="o">.</span><span class="n">sheetnames</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['Sheet']</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=28ad545a-3b36-4c45-b7dc-a62e1bf3beae">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Get-active-sheet-and-rename-it">Get active sheet and rename it<a class="anchor-link" href="#Get-active-sheet-and-rename-it">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e2235c5f-c010-42d8-b4d2-124832b91947">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">wb_out</span><span class="o">.</span><span class="n">active</span>
+<span class="n">sheet</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">"README"</span>
+<span class="n">wb_out</span><span class="o">.</span><span class="n">sheetnames</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['README']</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=50a211ee-8702-40b6-b110-2e2d7aa65dcb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Add-a-sheet-to-the-workbook">Add a sheet to the workbook<a class="anchor-link" href="#Add-a-sheet-to-the-workbook">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=616de97d-7846-46ea-922c-861402f423a3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">failed_sheet</span> <span class="o">=</span> <span class="n">wb_out</span><span class="o">.</span><span class="n">create_sheet</span><span class="p">(</span><span class="s1">'Failed'</span><span class="p">)</span>
+<span class="n">wb_out</span><span class="o">.</span><span class="n">sheetnames</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['README', 'Failed']</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3a38ec89-d453-4730-8e2a-5f02c733e1c0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Insert-a-sheet-at-specified-index">Insert a sheet at specified index<a class="anchor-link" href="#Insert-a-sheet-at-specified-index">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=42084366-d66e-4130-a4d1-d61d2f28db11">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">passed_sheet</span> <span class="o">=</span> <span class="n">wb_out</span><span class="o">.</span><span class="n">create_sheet</span><span class="p">(</span><span class="s1">'Passed'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">wb_out</span><span class="o">.</span><span class="n">sheetnames</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['README', 'Passed', 'Failed']</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6abb9748-34da-4288-a1c7-df44c2896293">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Change-the-active-worksheet">Change the active worksheet<a class="anchor-link" href="#Change-the-active-worksheet">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=28bfc16a-4fb0-45b6-bd2d-49d3e3eb3d3a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">wb_out</span><span class="o">.</span><span class="n">active</span> <span class="o">=</span> <span class="n">passed_sheet</span>
+<span class="n">wb_out</span><span class="o">.</span><span class="n">active</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;Worksheet "Passed"&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5d50911c-fa52-4b40-a628-9b83d1aa672d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Move-Worksheet">Move Worksheet<a class="anchor-link" href="#Move-Worksheet">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fa71e742-c443-4e2a-82ca-4f69ecd42829">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8300,80 +8481,9 @@ get_column_letter(27)='AA'
 <div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create a new workbook</span>
-<span class="n">output_wb</span> <span class="o">=</span> <span class="n">Workbook</span><span class="p">()</span>
-<span class="n">output_wb</span>
-
-<span class="n">readme_sheet</span> <span class="o">=</span> <span class="n">output_wb</span><span class="o">.</span><span class="n">active</span>
-<span class="n">readme_sheet</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s1">'README'</span>
-
-<span class="n">pass_sheet</span> <span class="o">=</span> <span class="n">output_wb</span><span class="o">.</span><span class="n">create_sheet</span><span class="p">(</span><span class="s1">'PASSED'</span><span class="p">)</span>
-<span class="n">fail_sheet</span> <span class="o">=</span> <span class="n">output_wb</span><span class="o">.</span><span class="n">create_sheet</span><span class="p">(</span><span class="s1">'FAILED'</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2e37c44c-e55d-4d36-9458-590a902ec649">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">count</span>
-
-<span class="n">pass_headings</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">'Inspection ID'</span><span class="p">,</span><span class="s1">'DBA Name'</span><span class="p">,</span> <span class="s1">'License #'</span><span class="p">,</span>
-    <span class="s1">'Address'</span><span class="p">,</span> <span class="s1">'Inspection Date'</span><span class="p">,</span> <span class="s1">'Results'</span><span class="p">,</span>
-<span class="p">]</span>
-
-<span class="n">fail_headings</span> <span class="o">=</span> <span class="n">pass_headings</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">fail_headings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'Violations'</span><span class="p">)</span>
-
-<span class="n">all_headings</span> <span class="o">=</span> <span class="n">fail_headings</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">write_headings</span><span class="p">(</span><span class="n">sheet</span><span class="p">,</span> <span class="n">headings</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">col</span><span class="p">,</span> <span class="n">heading</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">headings</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="n">cell</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="p">)</span>
-        <span class="n">cell</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">heading</span>
-
-<span class="n">write_headings</span><span class="p">(</span><span class="n">pass_sheet</span><span class="p">,</span> <span class="n">pass_headings</span><span class="p">)</span>
-<span class="n">write_headings</span><span class="p">(</span><span class="n">fail_sheet</span><span class="p">,</span> <span class="n">fail_headings</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4c1a1a58-df40-408f-949f-8fb5e08c1e3b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">pass_row_count</span><span class="p">,</span> <span class="n">fail_row_count</span> <span class="o">=</span> <span class="n">count</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">count</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">in_row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">in_sheet</span><span class="o">.</span><span class="n">max_row</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>    
-    <span class="n">record</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="k">for</span> <span class="n">heading</span> <span class="ow">in</span> <span class="n">all_headings</span><span class="p">:</span>
-        <span class="n">col_str</span> <span class="o">=</span> <span class="n">heading_map</span><span class="p">[</span><span class="n">heading</span><span class="p">]</span>
-        <span class="n">record</span><span class="p">[</span><span class="n">heading</span><span class="p">]</span> <span class="o">=</span> <span class="n">in_sheet</span><span class="p">[</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">col_str</span><span class="si">}{</span><span class="n">in_row</span><span class="si">}</span><span class="s2">"</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
-    <span class="c1"># for heading, side in HEADINGS_OF_INTEREST.items():</span>
-    <span class="c1">#     in_col = heading_map[heading]</span>
-    <span class="c1">#     key = f"{in_col}{in_row}"</span>
-    <span class="c1">#     record[heading] = in_sheet[key].value</span>
-    <span class="c1"># print(record)</span>
-    <span class="c1"># results = record['Results']</span>
-    <span class="c1"># pass_col_count, fail_col_count = count(1), count(1)</span>
-    <span class="k">break</span>
-    
-
-
-            
-            
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"before: </span><span class="si">{</span><span class="n">wb_out</span><span class="o">.</span><span class="n">sheetnames</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">wb_out</span><span class="o">.</span><span class="n">move_sheet</span><span class="p">(</span><span class="n">wb_out</span><span class="p">[</span><span class="s1">'Failed'</span><span class="p">],</span> <span class="n">offset</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"after:  </span><span class="si">{</span><span class="n">wb_out</span><span class="o">.</span><span class="n">sheetnames</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8386,13 +8496,102 @@ get_column_letter(27)='AA'
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>{'Inspection ID': 1068208, 'DBA Name': 'CHINA COURT RESTAURANT', 'License #': 2141795, 'Address': '1146 N MILWAUKEE AVE', 'Inspection Date': datetime.datetime(2012, 3, 14, 0, 0), 'Results': 'Fail', 'Violations': '18. NO EVIDENCE OF RODENT OR INSECT OUTER OPENINGS PROTECTED/RODENT PROOFED, A WRITTEN LOG SHALL BE MAINTAINED AVAILABLE TO THE INSPECTORS - Comments: FOUND NO PEST CONTROL LOG BOOK ON PREMISES,FRONT/REAR DOORS TO PREMISES WITH 1/4" MODE OF ENTRY.MUST PROVIDE PEST CONTROL LOG BOOK,RODENT PROOF SAID DOORS ALL ACROSS THE BOTTOMS. | 32. FOOD AND NON-FOOD CONTACT SURFACES PROPERLY DESIGNED, CONSTRUCTED AND MAINTAINED - Comments: SPLASHGUARD AT FRONT EXPOSED HANDSINK IS MISSING MUST PROVIDE,SINK STOPPERS ARE NEEDED FOR THE 3 COMPARTMENT SINK.   | 41. PREMISES MAINTAINED FREE OF LITTER, UNNECESSARY ARTICLES, CLEANING  EQUIPMENT PROPERLY STORED - Comments: DETAIL CLEAN,ORGANIZE REAR STORAGE AREAS AND REMOVE ALL CLUTTER/UNUSED KITCHEN EQUIPMENTS DUE TO POTENTIAL PEST HARBORAGE.'}
+<pre>before: ['README', 'Passed', 'Failed']
+after:  ['README', 'Failed', 'Passed']
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4b0aa5e1-ac71-406b-9419-e72f3f3d9831">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=36a4076e-84ad-41c4-8966-b49f919be79f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Remove-Worksheet">Remove Worksheet<a class="anchor-link" href="#Remove-Worksheet">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=399f99a4-340f-4b56-b5a6-32665e2b94b1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"before: </span><span class="si">{</span><span class="n">wb_out</span><span class="o">.</span><span class="n">sheetnames</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="c1"># remove will raise ValueError if the sheet isn't present</span>
+<span class="n">wb_out</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">wb_out</span><span class="p">[</span><span class="s1">'Failed'</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"after:  </span><span class="si">{</span><span class="n">wb_out</span><span class="o">.</span><span class="n">sheetnames</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>before: ['README', 'Failed', 'Passed']
+after:  ['README', 'Passed']
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1c084eee-46e0-4b61-831b-b9e2266ccd70">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Write-data-to-sheet">Write data to sheet<a class="anchor-link" href="#Write-data-to-sheet">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f239552e-d637-41d2-8546-61823f5e5975">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">sheet</span> <span class="o">=</span> <span class="n">wb_out</span><span class="p">[</span><span class="s1">'Passed'</span><span class="p">]</span>
+<span class="n">headings</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">'Inspection ID'</span><span class="p">,</span><span class="s1">'DBA Name'</span><span class="p">,</span> <span class="s1">'License #'</span><span class="p">,</span>
+    <span class="s1">'Address'</span><span class="p">,</span> <span class="s1">'Inspection Date'</span><span class="p">,</span> <span class="s1">'Results'</span><span class="p">,</span>
+<span class="p">]</span>
+<span class="k">for</span> <span class="n">col_index</span><span class="p">,</span> <span class="n">heading</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">headings</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">col_index</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">heading</span>
+<span class="k">for</span> <span class="n">row_index</span><span class="p">,</span> <span class="n">fake_row_num</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="mi">2</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">col_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">headings</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">row_index</span><span class="p">,</span> <span class="n">col_index</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> \
+            <span class="sa">f</span><span class="s2">"row=</span><span class="si">{</span><span class="n">fake_row_num</span><span class="si">}</span><span class="s2"> col=</span><span class="si">{</span><span class="n">col_index</span><span class="si">}</span><span class="s2">"</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d3796b19-077d-4a25-909b-cec08beac369">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Apply-Font">Apply Font<a class="anchor-link" href="#Apply-Font">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f35be7d2-dcd9-4d2e-95f7-0c497d3545b8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8400,36 +8599,73 @@ get_column_letter(27)='AA'
 <div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">output_wb</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'output.xlsx'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">openpyxl.styles</span><span class="w"> </span><span class="kn">import</span> <span class="n">Font</span>
+<span class="n">bold_font</span> <span class="o">=</span> <span class="n">Font</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">bold</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">col_index</span><span class="p">,</span> <span class="n">heading</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">headings</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">sheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">col_index</span><span class="p">)</span><span class="o">.</span><span class="n">font</span> <span class="o">=</span> <span class="n">bold_font</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=544d732b-9223-436f-b749-183a4d473225">
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=12871ebd-27f7-4fa7-8279-3c8029680547">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6---Additional-items-to-fill-time.">6 - Additional items to fill time.<a class="anchor-link" href="#6---Additional-items-to-fill-time.">¶</a></h2><ol>
-<li>You can select ranges i.e. A1:D20</li>
-<li>Inserting rows into a workheet</li>
-<li>If you insert a row into a table, you need to also alter the bounds of the table</li>
-<li>I ran into an issue inserting into a table which was the source of the pivot table</li>
-</ol>
+<h3 id="Insert-Rows">Insert Rows<a class="anchor-link" href="#Insert-Rows">¶</a></h3>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=66ccda1648806b52">
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=90f5d963-d596-4b2f-b86a-a7688691deec">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">sheet</span><span class="o">.</span><span class="n">insert_rows</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">amount</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=96b71eea-37e2-48e7-a641-13968f58a672">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="7---Resources">7 - Resources<a class="anchor-link" href="#7---Resources">¶</a></h2><ul>
+<h3 id="Save-Workbook-to-file">Save Workbook to file<a class="anchor-link" href="#Save-Workbook-to-file">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bf40626e-7c11-43fe-833e-8bef9809be70">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">wb_out</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">'output.xlsx'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c6d646f1-dbf5-432d-9c05-1181b4f363a5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="4---Resources">4 - Resources<a class="anchor-link" href="#4---Resources">¶</a></h2><ul>
 <li><a href="https://github.com/jocassid/Talk-openpyxl">https://github.com/jocassid/Talk-openpyxl</a></li>
 <li><a href="https://openpyxl.readthedocs.io">https://openpyxl.readthedocs.io</a></li>
 </ul>
